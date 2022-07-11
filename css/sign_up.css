@@ -1,0 +1,100 @@
+body{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+    
+}
+
+.child_center_h{
+    display: flex;
+    justify-content: center;
+}
+
+.child_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block_center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.head{
+    color: red;
+    width: 50vw;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.head_1{
+    color: red;
+    width: 340px;
+    margin: 5px auto;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    /* border: 2px solid brown; */
+}
+
+.Sign-up{
+    border: 2px solid green;
+    background-color: antiquewhite;
+    width: 60vw;
+    height: 60vh;
+   
+}
+
+.f_part{
+    margin-top: 10px;
+}
+
+.lable_grid{
+    display: inline-block;
+    /* border: 2px solid red; */
+    width: 150px;
+}
+
+@media only screen and (min-width: 769px){
+    .Sign-up{
+        width: 65vw;
+        height: 65vh;
+    }
+    .head_1{
+        display: none;
+    }
+    .head{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .Sign-up{
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+    }
+    .lable_grid{
+        display: block;
+        /* border: 2px solid red; */
+        width: 150px;
+    }
+    .name_area{
+        padding-top: 5vh;
+    }
+    .head{
+        display: none;
+    }
+    .head_1{
+        display: inline;
+    }
+}
